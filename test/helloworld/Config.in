@@ -1,0 +1,14 @@
+menu "helloworld"
+	depends on PACKAGE_helloworld
+
+config HELLOWORLD_ENABLE_FOO
+	bool "Enable Feature Foo"
+	depends on PACKAGE_helloworld
+	default y
+
+config HELLOWORLD_ENABLE_BAR
+	bool "Enable feature Bar"
+	depends on PACKAGE_helloworld
+	default n
+
+endmenu

@@ -1,0 +1,3 @@
+config helloworld
+	option duration 10
+	option enabled 1
